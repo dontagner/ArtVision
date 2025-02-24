@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    --outline: 1px dotted red;
+}
+
+.frontpage{
+    display:flex;
+    height:100%;
+
+}
+a{
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Lätt genomskinlig bakgrund */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    font-family: "Playfair Display", serif;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    z-index: 1000; /* Säkerställer att den är överst */
+}
+.hem,.omoss,.kontakt{
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 30px; /* Ökar storleken på knapparna */
+    font-size: 18px; /* Passande storlek för texten */
+    text-align: center;
+    width: auto; /* Låt knapparna ta den plats de behöver */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover-effekt */
+}
+
+.rubrikbox{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 60px;
+
+}
+.name,.galleri,.faq{
+    font-size: 20px;
+}
+/* Justering för knapparna */
+.knappar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Gör så att knapparna hamnar längst ut */
+    align-items: center;
+    gap: 20px; /* Mellanrum mellan knapparna */
+    height: 50px;
+    width: 100%; /* Se till att knapparna täcker hela bredden av sin container */
+}
+
+.galleri, .faq {
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 30px; /* Ökar storleken på knapparna */
+    font-size: 18px; /* Passande storlek för texten */
+    text-align: center;
+    width: auto; /* Låt knapparna ta den plats de behöver */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover-effekt */
+}
+
+.galleri:hover, .faq:hover ,.hem:hover,.omoss:hover,.kontakt:hover{
+    background-color: rgba(202, 202, 202, 0.8); /* Lätt mörkare nyans vid hover */
+}

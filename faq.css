@@ -1,0 +1,63 @@
+*{
+    --outline: 1px dotted red;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Lätt genomskinlig bakgrund */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    font-family: "Playfair Display", serif;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    z-index: 1000; /* Säkerställer att den är överst */
+}
+.hem,.omoss,.kontakt{
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 30px; /* Ökar storleken på knapparna */
+    font-size: 18px; /* Passande storlek för texten */
+    text-align: center;
+    width: auto; /* Låt knapparna ta den plats de behöver */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover-effekt */
+}
+
+a{
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.box{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    justify-content: space-between;
+    gap: 200px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+    outline: 1px solid black;
+}
+.q1,.q2,.q3,.q4,.q5,.q6,.q7{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 5px;
+}
